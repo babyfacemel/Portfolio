@@ -1,0 +1,556 @@
+/*-------------------Box Sizing------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*:before
+*:after {
+  box-sizing: inherit;
+}
+/*------box-sizing, normalize.com, and reset.css - different ways to define web pages actions in browsers*/
+
+body {
+  font-family: 'Cairo', sans-serif;
+  color: #000d1a;
+  line-height: .5em;
+  background-color: #000d1a;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-content {
+ max-height: 100%;
+ min-height: 31.25em;
+ max-width: 100%;
+ min-width: 31.25em;
+ margin: 0 auto;
+}
+
+.content {
+  margin: 1.625em;
+  color: #bebebe;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button a {
+  color: #bebebe;
+  font-size: 1em;
+  border: .1em solid #202020;
+  margin: .3125em 1.25em;
+  padding: .3125em 1em;
+  text-decoration: none;
+  list-style-type: none;
+  -moz-box-shadow:    inset 0 0 6.25em #000;
+  -webkit-box-shadow: inset 0 0 6.25em #000;
+  box-shadow:         inset 0 0 6.25em #000;
+}
+
+/*----------------------------------nav-bar---------------------------------*/
+
+a.active {
+  background-color: #004063;
+}
+
+span.active {
+  background-color: #004063;
+}
+
+nav.bar {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
+.bar ul {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  margin: 0; 
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #202020;
+  -moz-box-shadow:    inset 0 0 6.25em #000;
+  -webkit-box-shadow: inset 0 0 6.25em #000;
+  box-shadow:         inset 0 0 6.25em #000;
+}
+
+.bar ul li {
+  width: 12.5em;
+  height: 2.125em;
+  display: inline-block;
+  text-align: center;
+  padding-top: .5em;
+  font-size: 1em;
+}
+
+.bar ul li a {
+  display: block;
+  float: right;
+  color: #bebebe;
+  text-align: center;
+  padding: .4em 20%;
+  text-decoration: none;
+  font-size: 1.6em;
+} 
+
+.bar ul li a:hover {
+  background-color: #4c4c4c;
+}
+
+/*----------------------------------nav-bar---------------------------------*/
+/*----------------------------------header----------------------------------*/
+
+header.primary {
+  font-family: 'Audiowide', cursive;
+  text-align: center;
+  font-size: 1.4em;
+  color: #bebebe;
+  background-image: url(https://images.unsplash.com/photo-1517052269751-4ae3ad86cc59?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=richard-gatley-533872-unsplash.jpg&s=49795fbda3b2fa3f9daa0dab2b1fb0c5);
+  padding: 15%;
+  height: 100%;
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: .1875em solid #202020;
+}
+
+header.primary h1{
+  font-size: 2.8em;
+  letter-spacing: .25em;
+  line-height: 1em;
+  text-shadow: .05em .05em .01em #000;
+}
+
+header.primary img {
+  max-height: 100%;
+  min-height: auto;
+  max-width: 100%;
+  min-width: auto;
+}
+
+/*----------------------------------header----------------------------------*/
+/*----------------------------------page links------------------------------*/
+/*
+.page-links {
+  display: flex;
+  margin-right: 20em;
+  top: 0;
+}
+
+.page-links a {
+  font-size: 1.2em;
+  text-align: center;
+  width: 100px;
+  top: 0;
+}
+*/
+/*----------------------------------page links------------------------------*/
+/*----------------------------------overview--------------------------------*/
+
+figure img {
+  overflow: auto;
+  width: 100%;
+  height: 25%;
+  position: inherit;
+}
+
+.container {
+  display: flex;
+  margin: 3.125em;
+  border: .17em solid #202020;
+}
+
+#overview h2 {
+  font-size: 3em;
+  letter-spacing: .125em;
+  line-height: 1em;
+  top: 0;
+}
+
+.container figure {
+  display: block;
+  float: left;
+  margin-top: 4.875em;
+  max-height: 30%;
+  max-width: 30%;
+}
+
+.container img {
+  display: block;
+  float: left;
+  max-height: 30%;
+  max-width: 100%
+
+}
+
+.container p {
+  display: block;
+  float: none;
+  margin: 2.5em 1.25em 1.25em 6.25em;
+  font-size: 1.2em;
+  text-align: center;
+  word-spacing: .17em;
+  line-height: 2.1875em;
+  padding: .125em;
+}
+
+/*-----------------------------overview-----------------------------*/
+/*-----------------------------config-------------------------------*/
+
+.config {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-collapse: collapse;
+  margin: inherit;
+  line-height: 3em;
+}
+
+.config figure {
+  display: flex;
+  flex-direction: column;
+  max-width: 31.25em;
+  max-height: 31.25em;
+  justify-content: space-evenly;
+  clear: both;
+}
+
+.config figure img {
+  display:flex;
+  clear: both;
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.sub-header {
+  display: block;
+  text-align: center;
+  margin: .625em;
+  text-align: center;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  max-width: 30%;
+  max-height: 100%;
+  border: .03125em solid #202020;
+  border-collapse: collapse;
+  padding: .8125em;
+}
+
+h2.sub-header {
+  letter-spacing: .1875em;
+  font-size: 3em;
+}
+
+h3.sub-header {
+  letter-spacing: .1875em;
+  font-size: 2em;
+}
+
+h4.sub-header {
+  font-size: 1.2em;
+  letter-spacing: .125em;  
+}
+
+h5.sub-header {
+  font-size: 1.2em;
+  letter-spacing: .0625em;
+  width: 100%;
+  margin: .625em;
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  margin: .625em;
+  padding: 1em .5em;
+  width: inherit;
+  height: 100%;
+}
+
+dt {
+  text-align: center;
+  margin: 0px;
+  padding: .625em;
+  letter-spacing: .125em;
+  border: .03125em solid #202020;
+  -moz-box-shadow:    inset 0 0 6.25em #000;
+  -webkit-box-shadow: inset 0 0 6.25em #000;
+  box-shadow:         inset 0 0 6.25em #000;
+}
+
+dd {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  letter-spacing: .03125em;
+  word-spacing: .0625em;
+  max-width: 100%;
+  margin: 0 0 1.875em 0;
+  padding: 1.875em;
+  -moz-box-shadow:    inset 0 0 3.125em #202020;
+  -webkit-box-shadow: inset 0 0 3.125em #202020;
+  box-shadow:         inset 0 0 3.125em #202020;
+}
+
+aside#cargo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33.33%;
+  min-height: 100%;
+}
+
+aside#crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33.33%;
+  min-height: 100%;
+}
+
+aside#lab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33.33%;
+  min-height: 100%;
+}
+
+
+
+/*----------------------------------config----------------------------------*/
+/*----------------------------------index-----------------------------------*/
+
+/*----------------------------------history---------------------------------*/
+
+section#main-hist {
+  border: .0325em solid #202020;
+  margin-bottom: 1.25em;
+}
+
+header.sub-header h2 {
+  font-size: 2.9em;
+  letter-spacing: .06em;
+  word-spacing: .1em;
+  line-height: 1em;
+  border: .03125em solid #202020;
+  padding: .625em;
+  margin: 0;
+  -moz-box-shadow:    inset 0 0 6.25em #000;
+  -webkit-box-shadow: inset 0 0 6.25em #000;
+  box-shadow:         inset 0 0 6.25em #000;
+}
+
+section.miss h3 {
+  font-size: 2em;
+  text-align: center;
+  word-spacing: .625em;
+  letter-spacing: .1875em;
+}
+
+figure#hist {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+div#p-hist {
+  margin: 1.625em;
+  padding: 0 .625em;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+/*----------------------------------timeline-------------------*/
+
+#title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: .03125em solid #202020;
+  -moz-box-shadow:    inset 0 0 6.25em #000;
+  -webkit-box-shadow: inset 0 0 6.25em #000;
+  box-shadow:         inset 0 0 6.25em #000;
+}
+
+#title h2 {
+  font-size: 2em;
+  color: #bebebe;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  display: block;
+  float: right;
+  clear: both;
+  margin-top: 1.25em; 
+  border-left: .0325em solid #202020;
+}
+
+.tcontent {
+  color: #bebebe;
+  border: .03125em solid #202020;
+  border-collapse: collapse;
+  text-align: center;
+  position: inherit;
+  line-height: 1em;
+  padding: 0 1.625em 1.625em 1.625em;
+  -moz-box-shadow:    inset 0 0 3.125em #202020;
+  -webkit-box-shadow: inset 0 0 3.125em #202020;
+  box-shadow:         inset 0 0 3.125em #202020;
+}
+
+.container-left {
+  display: block;
+  float: inherit;
+  clear: both;
+  margin-bottom: 6.25em;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: right;
+}
+
+.container-right {
+  display: block;
+  float: inherit;
+  clear: both;
+  margin-bottom: 6.25em;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: .03125em solid #202020;
+  padding: .625em;
+  -moz-box-shadow:    inset 0 0 6.25em #000;
+  -webkit-box-shadow: inset 0 0 6.25em #000;
+  box-shadow:         inset 0 0 6.25em #000;
+}
+
+/*----------------------------------history---------------------------------*/
+/*----------------------------------faqs------------------------------------*/
+
+body.faqs {
+  margin: 0;
+  padding: 0;
+  border-right: .03125em solid #202020;
+  border-left: .03125em solid #202020;
+}
+
+article.faqs {
+  margin: 0px 3.25em;
+  padding: 10px;
+  border: .03125em solid #202020;
+}
+
+.faqs h2 {
+  letter-spacing: .1875em;
+}
+
+.faqs dt {
+  font-size: 2em;
+  line-height: 1em;
+}
+/*---------------------------bottom of pages------------------------------*/
+
+
+#external-links {
+  display: block;
+  float: inherit;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: .0325em solid #202020;
+}
+
+
+#external-links h4 {
+  text-align: center;
+  font-size: 1.8em;
+  letter-spacing: .0625em;
+  color: #bebebe;
+  top: 0;
+  margin: 0;
+  padding: .625em;
+  width: 100%;
+  height: 100%;
+  border-bottom: .0325em solid #202020;
+  -moz-box-shadow:    inset 0 0 6.25em #000;
+  -webkit-box-shadow: inset 0 0 6.25em #000;
+  box-shadow:         inset 0 0 6.25em #000;
+}
+
+#external-links ul li {
+  list-style-type: none;
+}
+
+#external-links ul li a {
+  display: block;
+  float: inherit;
+  clear: both;
+  text-align: center;
+  color: #bebebe;
+  font-size: 1.35em;
+  text-decoration: none;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+/*----------------------------------footer----------------------------------*/
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  color: #bebebe;
+  border: .03125em solid #202020;
+  text-align: center;
+  padding: 0;
+  -moz-box-shadow:    inset 0 0 6.25em #000;
+  -webkit-box-shadow: inset 0 0 6.25em #000;
+  box-shadow:         inset 0 0 6.25em #000;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+h6 a {
+  color: #bebebe;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*----------------------------------footer----------------------------------*/
